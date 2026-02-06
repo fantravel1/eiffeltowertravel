@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiffel Tower Travel | Do the Eiffel Tower Right</title>
+    <meta name="description" content="The world's definitive guide to the Eiffel Tower experience. Tickets, views, secret angles, food, neighborhood walks, and day plans. Less stress. More magic.">
+    <meta name="keywords" content="Eiffel Tower, Paris, travel guide, Eiffel Tower tickets, Paris viewpoints, Trocadéro, Champ de Mars">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Eiffel Tower Travel | Do the Eiffel Tower Right">
+    <meta property="og:description" content="The world's definitive guide to the Eiffel Tower experience. Tickets, views, secret angles, food, and day plans.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eiffeltowertravel.com">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Eiffel Tower",
+        "description": "The world's definitive guide to visiting the Eiffel Tower in Paris, France.",
+        "url": "https://eiffeltowertravel.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Champ de Mars, 5 Avenue Anatole France",
+            "addressLocality": "Paris",
+            "postalCode": "75007",
+            "addressCountry": "FR"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="tower-line"></div>
+            <span class="preloader-text">Discovering Paris...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-icon">&#9830;</span>
+                <span class="logo-text">EiffelTowerTravel</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#viewpoints">Viewpoints</a></li>
+                <li><a href="#photo-spots">Photo Spots</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#neighborhoods">Neighborhoods</a></li>
+                <li><a href="#itineraries">Itineraries</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#viewpoints">Viewpoints</a></li>
+            <li><a href="#photo-spots">Photo Spots</a></li>
+            <li><a href="#dining">Dining</a></li>
+            <li><a href="#neighborhoods">Neighborhoods</a></li>
+            <li><a href="#itineraries">Itineraries</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-media">
+            <div class="hero-video-wrapper">
+                <video autoplay muted loop playsinline id="heroVideo" poster="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&q=80">
+                    <source src="https://cdn.coverr.co/videos/coverr-the-eiffel-tower-in-paris-4722/1080p.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-image-fallback" style="background-image: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&q=80')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-preheading">The Definitive Guide</p>
+            <h1 class="hero-title">
+                <span class="title-line">Do the</span>
+                <span class="title-line title-accent">Eiffel Tower</span>
+                <span class="title-line">Right.</span>
+            </h1>
+            <p class="hero-subtitle">Less stress. More magic.</p>
+            <div class="hero-tags">
+                <span class="hero-tag">Tickets</span>
+                <span class="hero-tag">Views</span>
+                <span class="hero-tag">Secret Angles</span>
+                <span class="hero-tag">Food</span>
+                <span class="hero-tag">Walks</span>
+                <span class="hero-tag">Day Plans</span>
+            </div>
+            <a href="#experience" class="hero-cta">Start Your Journey</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Experience Intro -->
+    <section id="experience" class="section section-experience">
+        <div class="container">
+            <div class="section-header center">
+                <p class="section-label">The Experience</p>
+                <h2 class="section-title">Not Just a Monument.<br><em>A Masterpiece of Moments.</em></h2>
+                <p class="section-description">
+                    324 metres of iron, 20,000 light bulbs, and 7 million visitors a year.
+                    The Eiffel Tower isn't just something you see &mdash; it's something you feel.
+                    We'll show you how to feel it at its absolute best.
+                </p>
+            </div>
+        </div>
+
+        <!-- Full-width image strip -->
+        <div class="image-strip">
+            <div class="strip-item">
+                <img src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=600&q=80" alt="Eiffel Tower at night with golden lights" loading="lazy">
+                <span class="strip-label">Night Sparkle</span>
+            </div>
+            <div class="strip-item">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="Eiffel Tower from Trocadéro gardens" loading="lazy">
+                <span class="strip-label">Trocadéro View</span>
+            </div>
+            <div class="strip-item">
+                <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce65f4?w=600&q=80" alt="Eiffel Tower at sunset golden hour" loading="lazy">
+                <span class="strip-label">Golden Hour</span>
+            </div>
+            <div class="strip-item">
+                <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=600&q=80" alt="Eiffel Tower wide shot across Seine" loading="lazy">
+                <span class="strip-label">Seine View</span>
+            </div>
+            <div class="strip-item">
+                <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?w=600&q=80" alt="Eiffel Tower in spring with cherry blossoms" loading="lazy">
+                <span class="strip-label">Spring Bloom</span>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="324">0</span><span class="stat-suffix">m</span>
+                    <span class="stat-label">Height</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1889">0</span>
+                    <span class="stat-label">Year Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="7">0</span><span class="stat-suffix">M+</span>
+                    <span class="stat-label">Visitors/Year</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="20000">0</span>
+                    <span class="stat-label">Light Bulbs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tickets Section -->
+    <section id="tickets" class="section section-tickets">
+        <div class="split-section">
+            <div class="split-image" style="background-image: url('https://images.unsplash.com/photo-1549944850-84e00be4203b?w=1200&q=80')">
+                <div class="split-image-overlay"></div>
+            </div>
+            <div class="split-content">
+                <p class="section-label">Tickets & Access</p>
+                <h2 class="section-title">Skip the Chaos.<br><em>Master the Entry.</em></h2>
+                <p class="section-description">
+                    Elevator or stairs? Summit or second floor? Morning or twilight?
+                    We decode every ticket type, every entry route, and every time slot
+                    so you never waste a second in the wrong queue.
+                </p>
+                <div class="ticket-cards">
+                    <div class="ticket-card">
+                        <div class="ticket-icon">&#9650;</div>
+                        <h3>Summit Access</h3>
+                        <p>Elevator to the top. The ultimate Paris panorama from 276m.</p>
+                        <span class="ticket-price">From &euro;26.80</span>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-icon">&#9651;</div>
+                        <h3>Second Floor</h3>
+                        <p>Elevator ride to the viewing platform at 116m. Best for most visitors.</p>
+                        <span class="ticket-price">From &euro;17.10</span>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-icon">&#9683;</div>
+                        <h3>Stairs + Elevator</h3>
+                        <p>Walk up to the 2nd floor, then elevator to the summit. The adventurer's route.</p>
+                        <span class="ticket-price">From &euro;20.40</span>
+                    </div>
+                    <div class="ticket-card">
+                        <div class="ticket-icon">&#x2756;</div>
+                        <h3>Stairs Only</h3>
+                        <p>674 steps to the 2nd floor. Shorter queues, deeper experience.</p>
+                        <span class="ticket-price">From &euro;10.70</span>
+                    </div>
+                </div>
+                <a href="tickets.html" class="section-cta">View Full Ticket Guide &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Times Section -->
+    <section id="best-times" class="section section-times">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1509439581779-6298f75bf6e5?w=1920&q=80')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="container parallax-content">
+            <div class="section-header center light">
+                <p class="section-label">Timing Is Everything</p>
+                <h2 class="section-title">When the Tower<br><em>Truly Shines.</em></h2>
+            </div>
+            <div class="times-grid">
+                <div class="time-card">
+                    <div class="time-icon">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=80" alt="Sunrise over Paris" loading="lazy">
+                    </div>
+                    <h3>Early Morning</h3>
+                    <span class="time-range">9:00 &ndash; 10:30</span>
+                    <p>Shortest queues. Crisp light. The tower almost to yourself.</p>
+                    <div class="crowd-meter">
+                        <span class="crowd-level low"></span>
+                        <span class="crowd-text">Low crowds</span>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="time-icon">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?w=400&q=80" alt="Paris midday skyline" loading="lazy">
+                    </div>
+                    <h3>Midday</h3>
+                    <span class="time-range">11:00 &ndash; 15:00</span>
+                    <p>Peak crowds. Harsh light. Best avoided unless it's your only window.</p>
+                    <div class="crowd-meter">
+                        <span class="crowd-level high"></span>
+                        <span class="crowd-text">Heavy crowds</span>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="time-icon">
+                        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce65f4?w=400&q=80" alt="Eiffel Tower sunset golden hour" loading="lazy">
+                    </div>
+                    <h3>Golden Hour</h3>
+                    <span class="time-range">17:00 &ndash; 19:00 (summer)</span>
+                    <p>Warm light paints the iron gold. The most photogenic hour of all.</p>
+                    <div class="crowd-meter">
+                        <span class="crowd-level medium"></span>
+                        <span class="crowd-text">Moderate crowds</span>
+                    </div>
+                </div>
+                <div class="time-card">
+                    <div class="time-icon">
+                        <img src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=400&q=80" alt="Eiffel Tower light show at night" loading="lazy">
+                    </div>
+                    <h3>Night Sparkle</h3>
+                    <span class="time-range">Every hour on the hour</span>
+                    <p>20,000 bulbs glitter for 5 minutes. Pure Parisian magic from Trocadéro.</p>
+                    <div class="crowd-meter">
+                        <span class="crowd-level medium"></span>
+                        <span class="crowd-text">Moderate crowds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Viewpoints Section -->
+    <section id="viewpoints" class="section section-viewpoints">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Viewpoints</p>
+                <h2 class="section-title">Where to Stand.<br><em>What You'll See.</em></h2>
+                <p class="section-description">
+                    The Eiffel Tower looks different from every angle. These are the spots
+                    locals guard jealously and photographers wake up early for.
+                </p>
+            </div>
+        </div>
+
+        <div class="viewpoints-showcase">
+            <div class="viewpoint-card large">
+                <div class="viewpoint-image">
+                    <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=900&q=80" alt="Trocadéro esplanade with Eiffel Tower" loading="lazy">
+                </div>
+                <div class="viewpoint-info">
+                    <span class="viewpoint-number">01</span>
+                    <h3>Trocadéro Esplanade</h3>
+                    <p>The classic, head-on view. Arrive before 8am for photos without selfie sticks in every frame.</p>
+                    <div class="viewpoint-meta">
+                        <span class="meta-item"><strong>Best time:</strong> Sunrise</span>
+                        <span class="meta-item"><strong>Crowd level:</strong> High by 10am</span>
+                    </div>
+                </div>
+            </div>
+            <div class="viewpoint-grid">
+                <div class="viewpoint-card">
+                    <div class="viewpoint-image">
+                        <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=600&q=80" alt="Champ de Mars gardens facing Eiffel Tower" loading="lazy">
+                    </div>
+                    <div class="viewpoint-info">
+                        <span class="viewpoint-number">02</span>
+                        <h3>Champ de Mars</h3>
+                        <p>Lay on the grass, look up. The full tower framed by lawns and sky. Ideal for picnics.</p>
+                    </div>
+                </div>
+                <div class="viewpoint-card">
+                    <div class="viewpoint-image">
+                        <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?w=600&q=80" alt="Pont de Bir-Hakeim bridge with Eiffel Tower" loading="lazy">
+                    </div>
+                    <div class="viewpoint-info">
+                        <span class="viewpoint-number">03</span>
+                        <h3>Pont de Bir-Hakeim</h3>
+                        <p>The cinematic bridge from Inception. Iron arches frame the tower in layers of steel and light.</p>
+                    </div>
+                </div>
+                <div class="viewpoint-card">
+                    <div class="viewpoint-image">
+                        <img src="https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?w=600&q=80" alt="Rue de l'Université street view of Eiffel Tower" loading="lazy">
+                    </div>
+                    <div class="viewpoint-info">
+                        <span class="viewpoint-number">04</span>
+                        <h3>Rue de l'Universit&eacute;</h3>
+                        <p>A narrow street with Haussmann buildings framing the tower perfectly. Paris at its most cinematic.</p>
+                    </div>
+                </div>
+                <div class="viewpoint-card">
+                    <div class="viewpoint-image">
+                        <img src="https://images.unsplash.com/photo-1460904577954-8fadb714f9bd?w=600&q=80" alt="Seine River cruise view of Eiffel Tower" loading="lazy">
+                    </div>
+                    <div class="viewpoint-info">
+                        <span class="viewpoint-number">05</span>
+                        <h3>Seine River Cruise</h3>
+                        <p>Watch the tower drift past from the water. The reflection doubles the magic at twilight.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Spots Section (Full-width gallery) -->
+    <section id="photo-spots" class="section section-photos">
+        <div class="container">
+            <div class="section-header center">
+                <p class="section-label">Photo Spots</p>
+                <h2 class="section-title">Your Best Shot<br><em>Is Waiting.</em></h2>
+                <p class="section-description">
+                    Fast shots, cinematic compositions, and secret angles that most tourists walk right past.
+                    Know exactly where to stand and when to shoot.
+                </p>
+            </div>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="gallery-item tall">
+                <img src="https://images.unsplash.com/photo-1495442358998-961b69f45703?w=600&q=80" alt="Eiffel Tower through tree branches" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Through the Trees</h4>
+                    <p>Champ de Mars, southeast corner</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1481018085669-2bc6e4f00eed?w=600&q=80" alt="Eiffel Tower reflection in puddle" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Rain Reflection</h4>
+                    <p>Trocadéro after rain</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1478391679764-b2d8b3cd1e94?w=600&q=80" alt="Eiffel Tower from below looking up" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Look Up</h4>
+                    <p>Directly beneath the tower</p>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="https://images.unsplash.com/photo-1500039436846-25ae2f11882e?w=900&q=80" alt="Paris rooftop panorama with Eiffel Tower" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Rooftop Panorama</h4>
+                    <p>The 7th arrondissement rooftops</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80" alt="Eiffel Tower at blue hour" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Blue Hour</h4>
+                    <p>Pont d'Iéna, 30 min after sunset</p>
+                </div>
+            </div>
+            <div class="gallery-item tall">
+                <img src="https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?w=600&q=80" alt="Street with Eiffel Tower in background" loading="lazy">
+                <div class="gallery-overlay">
+                    <h4>Street Frame</h4>
+                    <p>Avenue de Camoëns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="section section-dining">
+        <div class="split-section reverse">
+            <div class="split-image" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=80')">
+                <div class="split-image-overlay"></div>
+            </div>
+            <div class="split-content">
+                <p class="section-label">Eat & Drink</p>
+                <h2 class="section-title">Taste the View.<br><em>Savour the Walk.</em></h2>
+                <p class="section-description">
+                    From Michelin-starred restaurants to baguette picnics on the grass &mdash;
+                    the best way to eat around the Eiffel Tower, whether you're on a budget or celebrating.
+                </p>
+                <div class="dining-categories">
+                    <div class="dining-cat">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&q=80" alt="Fine dining restaurant" loading="lazy">
+                        <div class="dining-cat-info">
+                            <h4>Fine Dining</h4>
+                            <p>Le Jules Verne and more &mdash; Michelin stars with a view.</p>
+                        </div>
+                    </div>
+                    <div class="dining-cat">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Parisian cafe terrace" loading="lazy">
+                        <div class="dining-cat-info">
+                            <h4>Caf&eacute; Culture</h4>
+                            <p>Croissants, espresso, and people-watching in the 7th.</p>
+                        </div>
+                    </div>
+                    <div class="dining-cat">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Picnic spread on grass" loading="lazy">
+                        <div class="dining-cat-info">
+                            <h4>Picnic on the Grass</h4>
+                            <p>Baguette, cheese, wine. Champ de Mars. That's the plan.</p>
+                        </div>
+                    </div>
+                    <div class="dining-cat">
+                        <img src="https://images.unsplash.com/photo-1530554764233-e79e16c91d08?w=400&q=80" alt="Bakery with fresh pastries" loading="lazy">
+                        <div class="dining-cat-info">
+                            <h4>Budget Bites</h4>
+                            <p>Crêpes, falafel, and bakeries within a 10-minute walk.</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="eat-and-drink.html" class="section-cta">Explore Dining Guide &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Neighborhoods Section -->
+    <section id="neighborhoods" class="section section-neighborhoods">
+        <div class="container">
+            <div class="section-header center">
+                <p class="section-label">Neighborhoods</p>
+                <h2 class="section-title">Beyond the Tower.<br><em>Into the Soul of Paris.</em></h2>
+                <p class="section-description">
+                    The Eiffel Tower sits at the crossroads of Paris's most enchanting neighborhoods.
+                    Each one offers a different flavor of the city.
+                </p>
+            </div>
+        </div>
+
+        <div class="neighborhoods-grid">
+            <a href="#" class="neighborhood-card">
+                <div class="neighborhood-image">
+                    <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?w=800&q=80" alt="7th Arrondissement Parisian streets" loading="lazy">
+                </div>
+                <div class="neighborhood-content">
+                    <h3>7th Arrondissement</h3>
+                    <p>The tower's home turf. Grand boulevards, hidden gardens, and the best walk-up views in the city.</p>
+                    <span class="neighborhood-distance">You're already here</span>
+                </div>
+            </a>
+            <a href="#" class="neighborhood-card">
+                <div class="neighborhood-image">
+                    <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?w=800&q=80" alt="Trocadéro and 16th arrondissement" loading="lazy">
+                </div>
+                <div class="neighborhood-content">
+                    <h3>Trocad&eacute;ro &amp; 16th</h3>
+                    <p>The grand viewpoint, Art Deco palaces, and the quieter, more elegant side of Paris.</p>
+                    <span class="neighborhood-distance">10 min walk across the Seine</span>
+                </div>
+            </a>
+            <a href="#" class="neighborhood-card">
+                <div class="neighborhood-image">
+                    <img src="https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=800&q=80" alt="Champ de Mars park" loading="lazy">
+                </div>
+                <div class="neighborhood-content">
+                    <h3>Champ de Mars</h3>
+                    <p>The grand lawn stretching to &Eacute;cole Militaire. Joggers, lovers, and the best sunset picnic spot.</p>
+                    <span class="neighborhood-distance">Steps from the base</span>
+                </div>
+            </a>
+            <a href="#" class="neighborhood-card">
+                <div class="neighborhood-image">
+                    <img src="https://images.unsplash.com/photo-1551634979-2b11f8c946fe?w=800&q=80" alt="Les Invalides dome" loading="lazy">
+                </div>
+                <div class="neighborhood-content">
+                    <h3>Les Invalides</h3>
+                    <p>Napoleon's tomb, military history, and a golden dome that rivals the tower's sparkle.</p>
+                    <span class="neighborhood-distance">15 min walk southeast</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Itineraries Section -->
+    <section id="itineraries" class="section section-itineraries">
+        <div class="parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1500039436846-25ae2f11882e?w=1920&q=80')"></div>
+        <div class="parallax-overlay dark"></div>
+        <div class="container parallax-content">
+            <div class="section-header center light">
+                <p class="section-label">Day Plans</p>
+                <h2 class="section-title">Your Perfect Day,<br><em>Planned to the Hour.</em></h2>
+                <p class="section-description">
+                    Whether you have 2 hours or 2 days, we've mapped every minute
+                    so you don't waste a single one.
+                </p>
+            </div>
+
+            <div class="itinerary-cards">
+                <div class="itinerary-card">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1478391679764-b2d8b3cd1e94?w=600&q=80" alt="Quick visit Eiffel Tower" loading="lazy">
+                    </div>
+                    <div class="itinerary-badge">2 Hours</div>
+                    <div class="itinerary-content">
+                        <h3>The Express Visit</h3>
+                        <p>Short on time? See the tower, snap the shot, grab a crêpe. Efficient, unforgettable.</p>
+                        <ul class="itinerary-stops">
+                            <li>Trocadéro photo stop</li>
+                            <li>Walk across Pont d'Iéna</li>
+                            <li>Tower base + Champ de Mars</li>
+                        </ul>
+                        <a href="#" class="itinerary-link">View Itinerary &rarr;</a>
+                    </div>
+                </div>
+                <div class="itinerary-card featured">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600&q=80" alt="Half day Eiffel Tower experience" loading="lazy">
+                    </div>
+                    <div class="itinerary-badge">Half Day</div>
+                    <div class="itinerary-content">
+                        <h3>The Golden Afternoon</h3>
+                        <p>The signature experience. Ascend, eat, wander, and catch the sunset from the perfect spot.</p>
+                        <ul class="itinerary-stops">
+                            <li>Ascend to the Summit</li>
+                            <li>Lunch at Café de l'Homme</li>
+                            <li>Champ de Mars picnic</li>
+                            <li>Sunset from Bir-Hakeim</li>
+                        </ul>
+                        <a href="#" class="itinerary-link">View Itinerary &rarr;</a>
+                    </div>
+                </div>
+                <div class="itinerary-card">
+                    <div class="itinerary-image">
+                        <img src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=600&q=80" alt="Full day Eiffel Tower and surroundings" loading="lazy">
+                    </div>
+                    <div class="itinerary-badge">Full Day</div>
+                    <div class="itinerary-content">
+                        <h3>Tower &amp; Beyond</h3>
+                        <p>Dawn to sparkle. The complete Eiffel Tower day with neighborhoods, food, and hidden gems.</p>
+                        <ul class="itinerary-stops">
+                            <li>Early morning ascent</li>
+                            <li>Rue Cler market walk</li>
+                            <li>Seine-side lunch</li>
+                            <li>Les Invalides visit</li>
+                            <li>Night sparkle from Trocadéro</li>
+                        </ul>
+                        <a href="#" class="itinerary-link">View Itinerary &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Walking Routes Section -->
+    <section class="section section-routes">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Walking Routes</p>
+                <h2 class="section-title">Walk Paris<br><em>Like You Live Here.</em></h2>
+            </div>
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="https://images.unsplash.com/photo-1549144511-f099e773c147?w=700&q=80" alt="Seine riverside walk" loading="lazy">
+                    </div>
+                    <div class="route-info">
+                        <div class="route-meta">
+                            <span>3.2 km</span>
+                            <span>45 min</span>
+                            <span>Easy</span>
+                        </div>
+                        <h3>The Seine Promenade</h3>
+                        <p>From the tower base along the riverbank to Pont Alexandre III. Paris at water level.</p>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=700&q=80" alt="Champ de Mars to Invalides walk" loading="lazy">
+                    </div>
+                    <div class="route-info">
+                        <div class="route-meta">
+                            <span>2.8 km</span>
+                            <span>40 min</span>
+                            <span>Easy</span>
+                        </div>
+                        <h3>Tower to Golden Dome</h3>
+                        <p>Champ de Mars through elegant streets to Napoleon's golden-domed Invalides.</p>
+                    </div>
+                </div>
+                <div class="route-card">
+                    <div class="route-image">
+                        <img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?w=700&q=80" alt="Trocadéro gardens walk" loading="lazy">
+                    </div>
+                    <div class="route-info">
+                        <div class="route-meta">
+                            <span>4.5 km</span>
+                            <span>60 min</span>
+                            <span>Moderate</span>
+                        </div>
+                        <h3>The Photographer's Loop</h3>
+                        <p>Hit every major Eiffel Tower photo angle in one glorious loop through both banks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA Section -->
+    <section class="section section-cta-banner">
+        <div class="cta-bg" style="background-image: url('https://images.unsplash.com/photo-1511739001486-6bfe10ce65f4?w=1920&q=80')"></div>
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <h2>Ready to Experience<br><em>the Eiffel Tower?</em></h2>
+            <p>Get our free day-plan PDF with timing tips, photo angles, and restaurant picks delivered to your inbox.</p>
+            <form class="cta-form" onsubmit="return false;">
+                <input type="email" placeholder="Your email address" aria-label="Email address" required>
+                <button type="submit">Get Free Guide</button>
+            </form>
+            <span class="cta-note">No spam. Just one perfect email about one perfect tower.</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <span class="logo-icon">&#9830;</span>
+                        <span>EiffelTowerTravel</span>
+                    </a>
+                    <p class="footer-tagline">Do the Eiffel Tower Right.<br>Less stress. More magic.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#tickets">Tickets & Access</a></li>
+                        <li><a href="#viewpoints">Viewpoints</a></li>
+                        <li><a href="#photo-spots">Photo Spots</a></li>
+                        <li><a href="#dining">Eat & Drink</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Plan</h4>
+                    <ul>
+                        <li><a href="#itineraries">Itineraries</a></li>
+                        <li><a href="#neighborhoods">Neighborhoods</a></li>
+                        <li><a href="#best-times">Best Times</a></li>
+                        <li><a href="#">Walking Routes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Evidence Standards</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 EiffelTowerTravel.com. All rights reserved.</p>
+                <p class="footer-evidence">Evidence-first. Crowd-aware. Built for real travelers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
