@@ -196,28 +196,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupImageFadeIn();
 
-    // --- Video fallback ---
-    const heroVideo = document.getElementById('heroVideo');
-    if (heroVideo) {
-        heroVideo.addEventListener('error', () => {
-            heroVideo.style.display = 'none';
-            const fallback = document.querySelector('.hero-image-fallback');
-            if (fallback) {
-                fallback.style.zIndex = '0';
-            }
-        });
-
-        // Pause video when not visible for performance
-        const videoObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    heroVideo.play().catch(() => {});
-                } else {
-                    heroVideo.pause();
-                }
-            });
-        });
-        videoObserver.observe(heroVideo);
+    // --- Reduce hero animation on low-power / prefers-reduced-motion ---
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const heroBg = document.querySelector('.hero-image-bg');
+        if (heroBg) {
+            heroBg.style.animation = 'none';
+        }
     }
 
     // --- Active nav link highlighting ---
@@ -245,6 +229,28 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setupActiveNavLinks();
+
+    // --- CTA Form UX ---
+    const ctaForm = document.getElementById('ctaForm');
+    if (ctaForm) {
+        ctaForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = ctaForm.querySelector('input[type="email"]');
+            const button = ctaForm.querySelector('button');
+            const note = document.getElementById('ctaNote');
+
+            if (input && input.validity.valid) {
+                button.textContent = 'Sent!';
+                button.style.background = '#4CAF50';
+                button.disabled = true;
+                input.disabled = true;
+                if (note) {
+                    note.textContent = 'Check your inbox for the guide. Merci!';
+                    note.style.color = 'rgba(255, 255, 255, 0.7)';
+                }
+            }
+        });
+    }
 
     // --- Image strip horizontal scroll on mobile ---
     const imageStrip = document.querySelector('.image-strip');
