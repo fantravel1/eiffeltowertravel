@@ -76,7 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const revealElements = document.querySelectorAll(
             '.section-header, .ticket-card, .time-card, .viewpoint-card, ' +
             '.gallery-item, .dining-cat, .neighborhood-card, .itinerary-card, ' +
-            '.route-card, .stat-item, .strip-item, .cta-content'
+            '.route-card, .stat-item, .strip-item, .cta-content, .faq-item, ' +
+            '.decision-card, .strategy-card, .info-card'
         );
 
         revealElements.forEach(el => {
