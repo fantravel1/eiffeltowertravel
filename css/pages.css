@@ -1,0 +1,348 @@
+/* ============================================
+   EIFFEL TOWER TRAVEL - Page-Specific Styles
+   ============================================ */
+
+/* --- Page Hero --- */
+.page-hero {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    padding: var(--space-2xl) 0 var(--space-xl);
+    margin-top: var(--nav-height);
+}
+
+.page-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(26, 26, 46, 0.3) 0%,
+        rgba(26, 26, 46, 0.6) 50%,
+        rgba(26, 26, 46, 0.9) 100%
+    );
+    z-index: 1;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    color: var(--white);
+}
+
+.breadcrumb {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb a {
+    color: var(--gold-light);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+    color: var(--gold);
+}
+
+.breadcrumb span {
+    margin: 0 0.5rem;
+}
+
+.page-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.page-hero h1 em {
+    color: var(--gold);
+    font-style: italic;
+}
+
+.page-hero p {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+/* --- Page Sections --- */
+.page-section {
+    padding: var(--space-xl) 0;
+    position: relative;
+}
+
+.page-section.bg-dark {
+    background: var(--navy);
+    color: var(--white);
+    overflow: hidden;
+}
+
+.page-section-bg {
+    position: absolute;
+    inset: -50px;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.page-section-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 26, 46, 0.85);
+    z-index: 1;
+}
+
+.page-section-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Decision Grid --- */
+.decision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: var(--space-lg);
+}
+
+.decision-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    transition: all var(--transition-base);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.decision-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.decision-card.highlight {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.decision-card.highlight .decision-image {
+    aspect-ratio: auto;
+    min-height: 100%;
+}
+
+.decision-image {
+    aspect-ratio: 16/10;
+    overflow: hidden;
+}
+
+.decision-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.decision-card:hover .decision-image img {
+    transform: scale(1.05);
+}
+
+.decision-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.decision-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: var(--cream);
+    color: var(--gold-dark);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 100px;
+    margin-bottom: 0.75rem;
+}
+
+.decision-badge.best {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.decision-content h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.decision-desc {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.decision-details {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 1.25rem;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.detail-label {
+    color: var(--text-secondary);
+}
+
+.detail-value {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.decision-tip {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(197, 164, 126, 0.1);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.decision-tip strong {
+    color: var(--gold-dark);
+}
+
+/* --- Strategy Grid --- */
+.strategy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: var(--space-lg);
+}
+
+.strategy-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all var(--transition-base);
+}
+
+.strategy-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.strategy-step {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 1rem;
+}
+
+.strategy-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--white);
+}
+
+.strategy-card p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.65;
+}
+
+/* --- Info Grid --- */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: var(--space-lg);
+}
+
+.info-card {
+    background: var(--cream);
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.info-card h4 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.info-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.info-card p:last-child {
+    margin-bottom: 0;
+}
+
+.page-cta-block {
+    text-align: center;
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+    .decision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .decision-card.highlight {
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+
+    .strategy-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-hero {
+        min-height: 50vh;
+    }
+
+    .strategy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
